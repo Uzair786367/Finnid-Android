@@ -1,0 +1,1554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#86E8E8E8"
+    tools:context=".Fragments.ServiesHomeFragment">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_3sdp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/rent_white"
+             android:layout_height="@dimen/_150sdp">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:src="@drawable/bannertop"
+    android:padding="@dimen/_5sdp"
+    android:layout_height="match_parent"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+              android:background="@drawable/rent_white"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+                android:text="Member Management"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="4"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:layout_marginTop="@dimen/_7sdp">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/li_member_register"
+
+                            android:layout_margin="1sp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/member_registration"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Member\n Registration"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:id="@+id/li_manageMember"
+                            android:layout_margin="1sp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/registerteam"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Manage\n Member"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/li_nominee"
+                            android:visibility="invisible"
+                            android:layout_margin="1sp"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/registernominee"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Nominee\n Registration"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+                            android:visibility="invisible"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+                                 android:layout_gravity="center"
+                                app:srcCompat="@drawable/new_logo"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Postpaid"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/_3sdp"
+             android:background="@drawable/rent_member"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+                android:text="Trade Center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="4"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/purchase_voucher"
+
+                            android:layout_margin="1sp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/ic_purchase"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Purchase Voucher"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+                            android:id="@+id/sell_voucher"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/sell_vvv"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Sell Voucher"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+                            android:id="@+id/li_purchase_report"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/preettbill"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Purchase Report"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="82dp"
+                            android:layout_margin="1sp"
+                            android:layout_weight="1"
+                            android:id="@+id/li_sell_report"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/_6sdp"
+                                android:tint="@color/colorPrimary"
+                                app:srcCompat="@drawable/sell_report"
+                                tools:ignore="VectorDrawableCompat" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:gravity="center"
+                                android:text="Sell Report"
+
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_8sdp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/_3sdp"
+             android:background="@drawable/rent_member"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+                android:text="Neo Bank"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="4"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                 android:layout_gravity="center"
+                                app:srcCompat="@drawable/aeps_form"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="AEPS"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/aadhaarpayy"
+                                android:tint="@color/colorPrimary"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Aadhaar Pay"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/immm_smartphone"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="DMR"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/iccc_transfer"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Money Transfer"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtMarquee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+             android:ellipsize="marquee"
+             android:padding="@dimen/_5sdp"
+             android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="We are top IT company in Lucknow, we offer cutting-edge website designs that not only look appealing but also perform optimally. We take pride in providing a wide variety of expertise to our diligent client base worldwide.Our aim to provide the best world-class web designing and development services and make the Internet an Effective place to start your marketing journey."
+            android:paddingStart="@dimen/_5sdp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/_3sdp"
+             android:background="@drawable/rent_member"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+                android:text="Recharge &amp; Bill Payments"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="4"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_2sdp"
+                            android:layout_marginTop="@dimen/_7sdp">
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/li_mobile"
+                                android:layout_margin="1sp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="45sp"
+                                    android:layout_height="45sp"
+                                    android:padding="@dimen/_6sdp"
+
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/prepaidd"
+                                    tools:ignore="VectorDrawableCompat"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Prepaid"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:textColor="@color/black"
+
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_8sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                android:layout_margin="1sp"
+                                android:id="@+id/li_dth"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="45sp"
+                                    android:layout_height="45sp"
+                                    android:layout_gravity="center"
+
+                                    android:padding="@dimen/_6sdp"
+                                    app:srcCompat="@drawable/dthhhhindiaaa"
+                                    tools:ignore="VectorDrawableCompat" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="DTH"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:textColor="@color/black"
+
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_8sdp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_margin="1sp"
+                                android:id="@+id/li_Electricity"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="45sp"
+                                    android:layout_height="45sp"
+                                    android:padding="@dimen/_6sdp"
+
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/topuppp"
+                                    tools:ignore="VectorDrawableCompat"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Top Up"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:textColor="@color/black"
+
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_8sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                android:layout_margin="1sp"
+                                android:id="@+id/li_Postpaid"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="45sp"
+                                    android:layout_height="45sp"
+                                    android:padding="@dimen/_6sdp"
+                                    
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/prepaidd"
+                                    tools:ignore="VectorDrawableCompat"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Postpaid"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:textColor="@color/black"
+
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_8sdp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="4"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_2sdp">
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/li_water"
+                                android:layout_margin="1sp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="45sp"
+                                    android:layout_height="45sp"
+                                    android:padding="@dimen/_6sdp"
+                                    
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/billpayment"
+                                    tools:ignore="VectorDrawableCompat"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bill Payments"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:textColor="@color/black"
+
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_8sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                android:id="@+id/li_Insurance"
+                                android:layout_margin="1sp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="45sp"
+                                    android:layout_height="45sp"
+                                    android:padding="@dimen/_6sdp"
+                                    
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/healthcare"
+                                    tools:ignore="VectorDrawableCompat"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Insurance"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:textColor="@color/black"
+
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_8sdp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:id="@+id/li_landline"
+                                android:layout_margin="1sp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="45sp"
+                                    android:layout_height="45sp"
+                                    android:padding="@dimen/_6sdp"
+                                    
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/telephone"
+                                    tools:ignore="VectorDrawableCompat"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Landline"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:textColor="@color/black"
+
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_8sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                android:layout_margin="1sp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="45sp"
+                                    android:layout_height="45sp"
+                                    android:padding="@dimen/_6sdp"
+                                    
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/electricalenergy"
+                                    tools:ignore="VectorDrawableCompat"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Electricity"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:textColor="@color/black"
+
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_8sdp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="4"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_2sdp"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_margin="1sp"
+                                android:id="@+id/li_Gas"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="45sp"
+                                    android:layout_height="45sp"
+                                    android:padding="@dimen/_6sdp"
+                                    
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/ic_gas"
+                                    tools:ignore="VectorDrawableCompat"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gas"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:textColor="@color/black"
+
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_8sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                android:id="@+id/li_Water"
+                                android:layout_margin="1sp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="45sp"
+                                    android:layout_height="45sp"
+                                    android:padding="@dimen/_6sdp"
+                                    
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/watter"
+                                    tools:ignore="VectorDrawableCompat"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Water"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:textColor="@color/black"
+
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_8sdp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_margin="1sp"
+                                android:id="@+id/li_FASTag"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="45sp"
+                                    android:layout_height="45sp"
+                                    android:padding="@dimen/_6sdp"
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/rocketlaunch"
+                                    tools:ignore="VectorDrawableCompat"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="FASTag"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:textColor="@color/black"
+
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_8sdp" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="80dp"
+                                android:layout_weight="1"
+                                android:id="@+id/li_Broadband"
+                                android:layout_margin="1sp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="45sp"
+                                    android:layout_height="45sp"
+                                    android:padding="@dimen/_6sdp"
+                                    
+                                    android:layout_gravity="center"
+                                    app:srcCompat="@drawable/routerdevice"
+                                    tools:ignore="VectorDrawableCompat"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Broadband"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:textColor="@color/black"
+
+                                    android:gravity="center"
+                                    android:textSize="@dimen/_8sdp" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                  <!--  <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="4"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:layout_margin="1sp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/preeeeeee"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Prepaid"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/dthhhhindiaaa"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="DTH"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/electricalenergy"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Electricity"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+                                 android:layout_gravity="center"
+                                app:srcCompat="@drawable/new_logo"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bill Payments"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>-->
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/_3sdp"
+             android:background="@drawable/rent_member"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+                android:text="Accounting"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="4"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:layout_margin="1sp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_4sdp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/tassssss"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tas"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/receive_mail"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Receive Voucher"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_2sdp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/ganrallll"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="General Voucher"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_2sdp"
+                                 android:layout_gravity="center"
+                                app:srcCompat="@drawable/icc_partner"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Contra Voucher"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/_3sdp"
+             android:background="@drawable/rent_member"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+                android:text="Employee Management"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="4"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:layout_margin="1sp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/new_logo"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Registration"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/new_logo"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Attendance"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/new_logo"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Attendance Report"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+                            android:visibility="invisible"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+                                 android:layout_gravity="center"
+                                app:srcCompat="@drawable/new_logo"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Contra Voucher"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/rent_member"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+                android:text="Report"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="4"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:layout_margin="1sp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/new_logo"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Ledger"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/new_logo"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Profit &amp; Loss"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/new_logo"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Balance Sheet"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:layout_margin="1sp"
+
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="45sp"
+                                android:layout_height="45sp"
+                                android:padding="@dimen/_6sdp"
+                                 android:layout_gravity="center"
+                                app:srcCompat="@drawable/new_logo"
+                                tools:ignore="VectorDrawableCompat"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Postpaid"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="@dimen/_8sdp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+</FrameLayout>

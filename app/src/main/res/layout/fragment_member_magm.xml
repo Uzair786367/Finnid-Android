@@ -1,0 +1,67 @@
+<!-- fragment_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- Buttons -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp">
+    <TextView
+        android:id="@+id/memberReg"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/_10sdp"
+        android:background="@drawable/rect_fill_new_colur"
+        android:layout_height="match_parent"
+        android:text="Member\n Registration" />
+
+        <TextView
+        android:id="@+id/manageMem"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:textSize="@dimen/_10sdp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+        android:text="Manage\n Member" />
+
+        <TextView
+        android:id="@+id/nomineeMem"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+        android:textSize="@dimen/_10sdp"
+        android:layout_height="match_parent"
+        android:text="Nominee\n Registration" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryMoreLight"
+        android:layout_marginVertical="@dimen/_3sdp"
+        android:layout_height="@dimen/_2sdp"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frameLayout"/>
+    </androidx.core.widget.NestedScrollView>
+    <!-- Form -->
+
+
+</LinearLayout>

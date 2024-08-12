@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/color_background"
+
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/additem"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:text="Add Item"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/_15sdp"
+        android:layout_height="@dimen/_50sdp"/>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+        android:padding="10dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/empty_list_text" />
+
+</LinearLayout>

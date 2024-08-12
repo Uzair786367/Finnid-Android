@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top"
+    android:background="@color/white"
+    android:textColor="@color/black"
+    android:singleLine="true"
+     android:textSize="@dimen/_12sdp"
+    android:paddingTop="@dimen/_4sdp"
+    android:text="e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2"
+    android:paddingBottom="@dimen/_4sdp"
+    android:paddingLeft="5dp" />

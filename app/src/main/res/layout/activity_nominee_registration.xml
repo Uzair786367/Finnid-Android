@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@color/color_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Nominee Name :"
+                android:textColor="@color/greycon"
+                android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:background="@drawable/rent_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                 <EditText
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/color_grey"
+                    android:id="@+id/ed_nominee_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Nominee Name"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Father Name :"
+                android:textColor="@color/greycon"
+                android:textSize="@dimen/_12sdp" />
+            <LinearLayout
+                android:background="@drawable/rent_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                 <EditText
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/color_grey"
+                    android:id="@+id/et_fathername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Father Name"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Father's Middle Name :"
+                android:visibility="gone"
+                android:textColor="@color/greycon"
+                android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:background="@drawable/rent_member"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                 <EditText
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/color_grey"
+                    android:id="@+id/fatherMiddleNameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Father's Middle Name"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Mother Name :"
+                android:textColor="@color/greycon"
+                android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:background="@drawable/rent_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                 <EditText
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/color_grey"
+                    android:id="@+id/ed_mother_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Mother Name"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Spouse Name :"
+                android:textColor="@color/greycon"
+                android:textSize="@dimen/_12sdp" />
+            <LinearLayout
+                android:background="@drawable/rent_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                 <EditText
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/color_grey"
+                    android:id="@+id/ed_spouse_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Spouse Name"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+
+
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Email :"
+                android:textColor="@color/greycon"
+                android:textSize="@dimen/_12sdp" />
+            <LinearLayout
+                android:background="@drawable/rent_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                 <EditText
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/color_grey"
+                    android:id="@+id/ed_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Email"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+
+
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Mobile :"
+                android:textColor="@color/greycon"
+                android:textSize="@dimen/_12sdp" />
+            <LinearLayout
+                android:background="@drawable/rent_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                 <EditText
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/color_grey"
+                    android:id="@+id/ed_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Mobile"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:inputType="phone"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Nationality :"
+                android:textColor="@color/greycon"
+                android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:background="@drawable/rent_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp">
+
+                    <Spinner
+                        android:id="@+id/spin_NationalityType"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="Select Nationality"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:text="Date Of Birth :"
+                        android:textColor="@color/greycon"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <LinearLayout
+                        android:background="@drawable/rent_member"
+                        android:id="@+id/dobView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:id="@+id/tv_dob"
+                                style="@android:style/Widget.EditText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@+id/calenderIcon"
+                                android:background="@android:color/transparent"
+                                android:clickable="false"
+                                android:ellipsize="end"
+                                android:textSize="@dimen/_12sdp"
+                                android:gravity="center_vertical"
+                                android:hint="DOB"
+                                android:paddingLeft="@dimen/_10sdp"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:paddingRight="@dimen/_6sdp"
+                                android:paddingBottom="@dimen/_10sdp"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textColor="@android:color/black" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/calenderIcon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                app:srcCompat="@drawable/ic_calendar_icon"
+                                app:tint="@color/color_grey_dark" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Address :"
+                android:textColor="@color/greycon"
+                android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:background="@drawable/rent_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                 <EditText
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/color_grey"
+                    android:id="@+id/addressEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Address"
+                    android:padding="@dimen/_10sdp"
+                    android:text=""
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Country :"
+                android:textColor="@color/greycon"
+                android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:background="@drawable/rent_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp">
+
+                    <Spinner
+                        android:id="@+id/spin_countryType"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="Select Country"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_CountryType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="Select Country"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:text="State :"
+                        android:textColor="@color/greycon"
+                        android:textSize="@dimen/_12sdp" />
+                    <LinearLayout
+                        android:background="@drawable/rent_member"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp">
+
+                            <Spinner
+                                android:id="@+id/spin_StateType"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ellipsize="end"
+                                android:focusable="false"
+                                android:gravity="center_vertical"
+                                android:hint="Select State"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_StateType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:text="Select State"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:text="City/District :"
+                        android:textColor="@color/greycon"
+                        android:textSize="@dimen/_12sdp" />
+                    <LinearLayout
+                        android:background="@drawable/rent_member"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        app:cardCornerRadius="@dimen/_5sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp">
+
+                            <Spinner
+                                android:id="@+id/spin_CityType"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ellipsize="end"
+                                android:focusable="false"
+                                android:gravity="center_vertical"
+                                android:hint="Select City"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_CityType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:text="Select City"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Pin Code :"
+                android:textColor="@color/greycon"
+                android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:background="@drawable/rent_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                 <EditText
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/color_grey"
+                    android:id="@+id/permPinCodeEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="Enter PinCode"
+                    android:padding="@dimen/_10sdp"
+                    android:text=""
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Occupation :"
+                android:textColor="@color/greycon"
+                android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:background="@drawable/rent_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp">
+
+                    <Spinner
+                        android:id="@+id/occupationEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:hint="Select Nationality"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </LinearLayout>
+
+           <!-- <LinearLayout
+                android:background="@drawable/rent_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                 <EditText
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/color_grey"
+                    android:id="@+id/occupationEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Occupation"
+                    android:inputType="text"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>-->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Relationship :"
+                android:textColor="@color/greycon"
+                android:textSize="@dimen/_12sdp" />
+            <LinearLayout
+                android:background="@drawable/rent_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                 <EditText
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/color_grey"
+                    android:id="@+id/ed_relationship"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Relationship"
+                    android:inputType="text"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Effective Date of Nomination :"
+                android:textColor="@color/greycon"
+                android:textSize="@dimen/_12sdp" />
+            <LinearLayout
+                android:background="@drawable/rent_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                 <EditText
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/color_grey"
+                    android:id="@+id/ed_effective_date_nomination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Effective Date of Nomination"
+                    android:inputType="text"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Date of Attaining Majority"
+                android:textColor="@color/greycon"
+                android:textSize="@dimen/_12sdp" />
+            <LinearLayout
+                android:background="@drawable/rent_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                 <EditText
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/color_grey"
+                    android:id="@+id/ed_date_attaining_majorit"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Date of Attaining Majority"
+                    android:inputType="text"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingHorizontal="@dimen/_12sdp"
+                android:gravity="center"
+                android:layout_gravity="center"
+
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/submitBtn"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/inner_btn_enable_disable"
+
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/kycBtn"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="0dp"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/inner_btn_enable_disable"
+                    android:enabled="true"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Update Kyc"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

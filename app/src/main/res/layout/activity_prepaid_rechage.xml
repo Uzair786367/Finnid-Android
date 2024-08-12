@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/color_background"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/mobileNumberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/import_contact"
+                android:layout_toStartOf="@+id/import_contact">
+
+                <EditText
+                    android:id="@+id/number"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:paddingLeft="@dimen/_3sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/rent_member"
+                     android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_mobile_icon"
+                    android:drawableTint="#C1C0C0"
+                     android:gravity="center_vertical"
+                     android:layout_gravity="center_vertical"
+                    android:hint="Enter Number"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/import_contact"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10sp"
+                 app:srcCompat="@drawable/ic_perm_contact_24dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/import_operator"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:background="@drawable/rent_member"
+            android:orientation="horizontal"
+            android:padding="2sp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                app:srcCompat="@drawable/ic_network_icon"
+                app:tint="#C1C0C0" />
+
+            <TextView
+                android:id="@+id/operator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:padding="10dip"
+                android:text="Select Operator"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+        <LinearLayout
+             android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:background="@drawable/rent_member"
+            android:orientation="horizontal"
+            android:id="@+id/li_circle"
+            android:padding="2sp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                app:srcCompat="@drawable/ic_network_icon"
+                app:tint="#C1C0C0" />
+
+            <TextView
+                android:id="@+id/tv_circle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:padding="10dip"
+                android:text="Select Circle"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:background="@drawable/rent_member"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_2sdp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:layout_toLeftOf="@+id/viewPlans"
+                android:layout_toStartOf="@+id/viewPlans">
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:paddingLeft="@dimen/_3sdp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                     android:background="@color/white"
+                    android:drawableLeft="@drawable/ic_rupee_indian"
+                    android:drawableTint="#C1C0C0"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:hint="Amount"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/viewPlans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="View Plans"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:padding="7dp"
+                  android:visibility="visible" />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="Payment Mode"
+            android:textColor="@color/greycon"
+            android:textSize="@dimen/_12sdp" />
+        <LinearLayout
+            android:background="@drawable/rent_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp">
+
+            <Spinner
+                android:id="@+id/spin_PaymentMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_10sdp"
+                android:text=""
+                android:hint="Enter UOM"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+
+ <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="Bank"
+            android:textColor="@color/greycon"
+            android:textSize="@dimen/_12sdp" />
+        <LinearLayout
+            android:background="@drawable/rent_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp">
+
+            <Spinner
+                android:id="@+id/spin_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_10sdp"
+                android:text=""
+                android:hint="Enter UOM"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bt_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_32sdp"
+        android:gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rent_bootem"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Recharge"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp" />
+
+</RelativeLayout>

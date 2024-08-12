@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">finnid</string>
+    <string name="term_privacy_text">You agree with our <a href="https://finnid.in/terms">Terms &amp; Conditions</a> and <a href="https://finnid.in/SND">Privacy Policy</a> by tapping Sign In button</string>
+    <string name="click_here"><u>Click here</u></string>
+    <string name="err_msg_pass">Please Enter Your Password.</string>
+    <string name="err_old_pass">Please Enter Your Old Password.</string>
+    <string name="err_new_pass">Please Enter New Password.</string>
+    <string name="err_empty_field">Field can\'t be empty</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Member fragment</string>
+    <string name="internet_error_msg">There is no internet connection found. Check your internet connection or try again.</string>
+    <string name="permission_msg">Gallery and Camera permission is required</string>
+
+
+    <string name="enter_name">Country Name</string>
+    <string name="add_record">Add Record</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Delete</string>
+    <string name="empty_list_text">No records found</string>
+    <string name="enter_desc">Currency</string>
+    <string name="enter_title">Country</string>
+
+
+</resources>

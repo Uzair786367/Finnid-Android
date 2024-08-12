@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:text="Upload Signature Proof "
+            android:textColor="@color/greycon"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:background="@drawable/rent_member"
+            android:id="@+id/landOwnershipView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/signature_choose_file_tv"
+                    style="@android:style/Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/signature_choose_file"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:text="No File Choose"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/color_grey_dark"/>
+
+                <TextView
+                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/rect"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    app:srcCompat="@drawable/ic_arrow_drop_down"
+                    android:id="@+id/signature_choose_file"
+                    android:text="  Choose File  "
+                    android:padding="@dimen/_3sdp"
+                    android:textSize="@dimen/_11sdp"
+                    app:tint="@color/color_grey_dark" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:text="Upload Identity Proof "
+            android:textColor="@color/greycon"
+            android:textSize="@dimen/_12sdp" />
+        <LinearLayout
+            android:background="@drawable/rent_member"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/IdentityTv"
+                    style="@android:style/Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/Identity_choose_file"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:text="No File Choose"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/color_grey_dark"/>
+
+                <TextView
+                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/rect"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    app:srcCompat="@drawable/ic_arrow_drop_down"
+                    android:id="@+id/Identity_choose_file"
+                    android:text="  Choose File  "
+                    android:padding="@dimen/_3sdp"
+                    android:textSize="@dimen/_11sdp"
+                    app:tint="@color/color_grey_dark" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:text="Upload Address Proof "
+            android:textColor="@color/greycon"
+            android:textSize="@dimen/_12sdp" />
+        <LinearLayout
+            android:background="@drawable/rent_member"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/addressTv"
+                    style="@android:style/Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/address_choose_file"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:text="No File Choose"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/color_grey_dark"/>
+
+                <TextView
+                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/rect"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    app:srcCompat="@drawable/ic_arrow_drop_down"
+                    android:id="@+id/address_choose_file"
+                    android:text="  Choose File  "
+                    android:padding="@dimen/_3sdp"
+                    android:textSize="@dimen/_11sdp"
+                    app:tint="@color/color_grey_dark" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:text="Upload Profile Image "
+            android:textColor="@color/greycon"
+            android:textSize="@dimen/_12sdp" />
+        <LinearLayout
+            android:background="@drawable/rent_member"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ProfileTv"
+                    style="@android:style/Widget.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/Profile_choose_file"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:text="No File Choose"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/color_grey_dark"/>
+
+                <TextView
+                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/rect"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    app:srcCompat="@drawable/ic_arrow_drop_down"
+                    android:id="@+id/Profile_choose_file"
+                    android:text="  Choose File  "
+                    android:padding="@dimen/_3sdp"
+                    android:textSize="@dimen/_11sdp"
+                    app:tint="@color/color_grey_dark" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_15sdp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:background="@drawable/rect_sml"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:srcCompat="@drawable/ic_arrow_drop_down"
+        android:id="@+id/upload_tv"
+        android:text="  Upload  "
+        android:padding="@dimen/_5sdp"
+        app:tint="@color/color_grey_dark" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:background="@drawable/rect_sml"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:srcCompat="@drawable/ic_arrow_drop_down"
+        android:id="@+id/cancel_tv"
+        android:text="  Cancel  "
+        android:padding="@dimen/_5sdp"
+        app:tint="@color/color_grey_dark" />
+
+
+</LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/Browser"
+            android:layout_height="@dimen/_150sdp"/>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+</LinearLayout>

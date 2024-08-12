@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:background="#FAE4E4"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingHorizontal="@dimen/_5sdp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:text="Item (with sr. No.)*"
+            android:textColor="@color/greycon"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:background="@drawable/rent_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp">
+
+            <Spinner
+                android:id="@+id/item_sr_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                 android:padding="@dimen/_10sdp"
+                android:text=""
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:text="UOM"
+                    android:textColor="@color/greycon"
+                    android:textSize="@dimen/_12sdp" />
+                <LinearLayout
+                    android:background="@drawable/rent_member"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp">
+
+                    <EditText
+                        android:id="@+id/ed_UOM"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_10sdp"
+                        android:text=""
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:text="Qty"
+                    android:textColor="@color/greycon"
+                    android:textSize="@dimen/_12sdp" />
+                <LinearLayout
+                    android:background="@drawable/rent_member"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp">
+
+                    <EditText
+                        android:id="@+id/ed_qty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_10sdp"
+                        android:text=""
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:text="Rate"
+                    android:textColor="@color/greycon"
+                    android:textSize="@dimen/_12sdp" />
+                <LinearLayout
+                    android:background="@drawable/rent_member"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp">
+
+                    <EditText
+                        android:id="@+id/ed_Rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_10sdp"
+                        android:text=""
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:text="Disc"
+                    android:textColor="@color/greycon"
+                    android:textSize="@dimen/_12sdp" />
+                <LinearLayout
+                    android:background="@drawable/rent_member"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp">
+
+                    <EditText
+                        android:id="@+id/ed_Disc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_10sdp"
+                        android:text=""
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:text="Transaction Value	"
+            android:textColor="@color/greycon"
+            android:textSize="@dimen/_12sdp" />
+        <LinearLayout
+            android:background="@drawable/rent_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp">
+
+            <EditText
+                android:id="@+id/ed_transaction_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                 android:padding="@dimen/_10sdp"
+                android:text=""
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:text="GST(%)"
+            android:textColor="@color/greycon"
+            android:textSize="@dimen/_12sdp" />
+        <LinearLayout
+            android:background="@drawable/rent_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp">
+
+            <EditText
+                android:id="@+id/ed_gst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_10sdp"
+                android:text=""
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/_8sdp"
+              android:layout_marginTop="10dp"
+              android:layout_marginRight="@dimen/_8sdp"
+              android:layout_marginBottom="@dimen/_3sdp"
+              android:text="Gst(Amt)"
+              android:textColor="@color/greycon"
+              android:textSize="@dimen/_12sdp" />
+          <LinearLayout
+              android:background="@drawable/rent_member"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/_8sdp"
+              android:layout_marginRight="@dimen/_8sdp">
+
+              <EditText
+                  android:id="@+id/ed_gst_amt"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@android:color/transparent"
+                  android:gravity="center_vertical"
+                  android:padding="@dimen/_10sdp"
+                  android:text=""
+                  android:textSize="@dimen/_12sdp" />
+
+          </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+      <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:text="Cess(%)"
+            android:textColor="@color/greycon"
+            android:textSize="@dimen/_12sdp" />
+        <LinearLayout
+            android:background="@drawable/rent_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp">
+
+            <EditText
+                android:id="@+id/ed_Cess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_10sdp"
+                android:text=""
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/_8sdp"
+              android:layout_marginTop="10dp"
+              android:layout_marginRight="@dimen/_8sdp"
+              android:layout_marginBottom="@dimen/_3sdp"
+              android:text="Cess(Amt)"
+              android:textColor="@color/greycon"
+              android:textSize="@dimen/_12sdp" />
+          <LinearLayout
+              android:background="@drawable/rent_member"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/_8sdp"
+              android:layout_marginRight="@dimen/_8sdp">
+
+              <EditText
+                  android:id="@+id/ed_cess_amt"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@android:color/transparent"
+                  android:gravity="center_vertical"
+                  android:padding="@dimen/_10sdp"
+                  android:text=""
+                  android:textSize="@dimen/_12sdp" />
+
+          </LinearLayout>
+
+
+
+      </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:text="Amount"
+            android:textColor="@color/greycon"
+            android:textSize="@dimen/_12sdp" />
+        <LinearLayout
+            android:background="@drawable/rent_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp">
+
+            <EditText
+                android:id="@+id/ed_Amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                 android:padding="@dimen/_10sdp"
+                android:text=""
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

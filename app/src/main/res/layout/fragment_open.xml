@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    tools:context=".Fragments.OpenFragment">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:background="@color/white"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="@dimen/_8sdp"
+               android:layout_marginBottom="@dimen/_3sdp"
+               android:text="Particulars :"
+               android:textColor="@color/greycon"
+               android:textSize="@dimen/_12sdp" />
+           <LinearLayout
+               android:background="@drawable/rent_member"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:layout_marginRight="@dimen/_8sdp"
+               >
+
+               <EditText
+                   android:id="@+id/Particulars"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@android:color/transparent"
+                   android:ellipsize="end"
+                   android:gravity="center_vertical"
+                   android:hint="Enter Particulars"
+                   android:padding="@dimen/_10sdp"
+                   android:singleLine="true"
+                   android:text=""
+                   android:textSize="@dimen/_12sdp" />
+
+           </LinearLayout>
+
+
+ <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="@dimen/_8sdp"
+               android:layout_marginBottom="@dimen/_3sdp"
+               android:text="HSN :"
+               android:textColor="@color/greycon"
+               android:textSize="@dimen/_12sdp" />
+           <LinearLayout
+               android:background="@drawable/rent_member"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:layout_marginRight="@dimen/_8sdp"
+               >
+
+               <EditText
+                   android:id="@+id/HSN"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@android:color/transparent"
+                   android:ellipsize="end"
+                   android:gravity="center_vertical"
+                   android:hint="Enter HSN"
+                   android:padding="@dimen/_10sdp"
+                   android:singleLine="true"
+                   android:text=""
+                   android:textSize="@dimen/_12sdp" />
+
+           </LinearLayout>
+
+
+ <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="@dimen/_8sdp"
+               android:layout_marginBottom="@dimen/_3sdp"
+               android:text="Qty :"
+               android:textColor="@color/greycon"
+               android:textSize="@dimen/_12sdp" />
+           <LinearLayout
+               android:background="@drawable/rent_member"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:layout_marginRight="@dimen/_8sdp"
+               >
+
+               <EditText
+                   android:id="@+id/Qty"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@android:color/transparent"
+                   android:ellipsize="end"
+                   android:inputType="number"
+                   android:gravity="center_vertical"
+                   android:hint="Enter Qty"
+                   android:padding="@dimen/_10sdp"
+                   android:singleLine="true"
+                   android:text=""
+                   android:textSize="@dimen/_12sdp" />
+
+           </LinearLayout>
+
+
+ <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="@dimen/_8sdp"
+               android:layout_marginBottom="@dimen/_3sdp"
+               android:text="Rate :"
+               android:textColor="@color/greycon"
+               android:textSize="@dimen/_12sdp" />
+           <LinearLayout
+               android:background="@drawable/rent_member"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:layout_marginRight="@dimen/_8sdp"
+               >
+
+               <EditText
+                   android:id="@+id/Rate"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@android:color/transparent"
+                   android:ellipsize="end"
+                   android:inputType="number"
+                   android:gravity="center_vertical"
+                   android:hint="Enter Rate"
+                   android:padding="@dimen/_10sdp"
+                   android:singleLine="true"
+                   android:text=""
+                   android:textSize="@dimen/_12sdp" />
+
+           </LinearLayout>
+
+
+ <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="@dimen/_8sdp"
+               android:layout_marginBottom="@dimen/_3sdp"
+               android:text="UOM :"
+               android:textColor="@color/greycon"
+               android:textSize="@dimen/_12sdp" />
+           <LinearLayout
+               android:background="@drawable/rent_member"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:layout_marginRight="@dimen/_8sdp"
+               >
+
+
+               <Spinner
+                   android:id="@+id/spin_fieldUomType"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:ellipsize="end"
+                   android:focusable="false"
+                   android:gravity="center_vertical"
+                   android:hint="Select Field UOM Type"
+                   android:singleLine="true"
+                   android:text=""
+                   android:textSize="@dimen/_12sdp" />
+
+           </LinearLayout>
+
+
+ <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="@dimen/_8sdp"
+               android:layout_marginBottom="@dimen/_3sdp"
+               android:text="Discount :"
+               android:textColor="@color/greycon"
+               android:textSize="@dimen/_12sdp" />
+           <LinearLayout
+               android:background="@drawable/rent_member"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:layout_marginRight="@dimen/_8sdp"
+               >
+
+               <EditText
+                   android:id="@+id/Discount"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@android:color/transparent"
+                   android:ellipsize="end"
+                   android:inputType="number"
+                   android:gravity="center_vertical"
+                   android:hint="Enter Discount"
+                   android:padding="@dimen/_10sdp"
+                   android:singleLine="true"
+                   android:text=""
+                   android:textSize="@dimen/_12sdp" />
+
+           </LinearLayout>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="@dimen/_8sdp"
+               android:layout_marginBottom="@dimen/_3sdp"
+               android:text="GST Rate :"
+               android:textColor="@color/greycon"
+               android:textSize="@dimen/_12sdp" />
+           <LinearLayout
+               android:background="@drawable/rent_member"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:layout_marginRight="@dimen/_8sdp"
+               >
+
+               <EditText
+                   android:id="@+id/GSTRate"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@android:color/transparent"
+                   android:ellipsize="end"
+                   android:inputType="number"
+                   android:gravity="center_vertical"
+                   android:hint="Enter GST Rate"
+                   android:padding="@dimen/_10sdp"
+                   android:singleLine="true"
+                   android:text=""
+                   android:textSize="@dimen/_12sdp" />
+
+           </LinearLayout>
+
+
+<TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="@dimen/_8sdp"
+               android:layout_marginBottom="@dimen/_3sdp"
+               android:text="CESS Rate :"
+               android:textColor="@color/greycon"
+               android:textSize="@dimen/_12sdp" />
+           <LinearLayout
+               android:background="@drawable/rent_member"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/_8sdp"
+               android:layout_marginRight="@dimen/_8sdp"
+               >
+
+               <EditText
+                   android:id="@+id/CESSRate"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@android:color/transparent"
+                   android:ellipsize="end"
+                   android:gravity="center_vertical"
+                   android:hint="Enter CESS Rate"
+                   android:inputType="number"
+                   android:padding="@dimen/_10sdp"
+                   android:singleLine="true"
+                   android:text=""
+                   android:textSize="@dimen/_12sdp" />
+
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:id="@+id/tv_submit"
+               android:layout_gravity="center"
+               android:layout_height="@dimen/_40sdp"
+               android:background="@drawable/rect_fill_new"
+               android:layout_marginHorizontal="@dimen/_50sdp"
+               android:layout_marginVertical="@dimen/_30sdp"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="@dimen/_3sdp"
+               android:gravity="center"
+               android:text="Submit"
+               android:backgroundTint="@color/colorPrimary"
+               android:paddingHorizontal="@dimen/_10sdp"
+               android:textColor="@color/white"
+               android:textSize="@dimen/_12sdp" />
+
+
+
+
+
+       </LinearLayout>
+
+   </ScrollView>
+
+</FrameLayout>

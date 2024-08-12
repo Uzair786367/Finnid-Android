@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/rent_member"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/_80sdp"
+            android:src="@drawable/new_logo"
+            android:layout_height="@dimen/_30sdp"/>
+
+
+         <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:src="@drawable/ic_refresh"
+            android:padding="@dimen/_6sdp"
+             android:layout_alignParentRight="true"
+            android:layout_height="@dimen/_30sdp"/>
+
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:text="Orders : "
+                android:textStyle="bold"
+                android:textColor="#D5BF04"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:gravity="center"
+                 android:text="26/6/2024"
+                android:textStyle="bold"
+                android:textColor="#D5BF04"
+                android:textSize="@dimen/_10sdp" />
+
+
+        </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#DCDCDC"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_height="@dimen/_1sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:text="SuccessFull Orders : "
+
+            android:textColor="#D5BF04"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="7"
+
+            android:textColor="#D5BF04"
+            android:textSize="@dimen/_10sdp" />
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="#DCDCDC"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_height="@dimen/_1sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:text="Failed Orders : "
+            android:textColor="#D5BF04"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="#D5BF04"
+            android:textSize="@dimen/_10sdp" />
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#DCDCDC"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_height="@dimen/_1sdp"/>
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:text="Cancelled Orders : "
+            android:textColor="#D5BF04"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="#D5BF04"
+            android:textSize="@dimen/_10sdp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#DCDCDC"
+        android:visibility="invisible"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_height="@dimen/_1sdp"/>
+
+
+</LinearLayout>

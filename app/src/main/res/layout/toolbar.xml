@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_45sdp"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal"
+
+    android:id="@+id/toolbar">
+
+    <ImageView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:id="@+id/toolbar_im"
+        android:tint="@color/white"
+         android:layout_height="@dimen/_20sdp"/>
+
+    <TextView
+        android:id="@+id/toolbar_text"
+        android:layout_gravity="center_vertical"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:gravity="center_vertical"
+        android:text="Select Land Ownership"
+        android:layout_marginLeft="@dimen/_8sdp"
+         android:textSize="@dimen/_14sdp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
